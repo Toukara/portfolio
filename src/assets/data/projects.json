@@ -1,0 +1,35 @@
+[
+  {
+    "id": 1,
+    "name": "Project 1",
+    "description": "Aliqua veniam quis qui pariatur excepteur labore pariatur culpa.",
+    "url": "https://github.com",
+    "image": "https://placehold.co/600x400",
+    "techs": ["JS", "HTML", "CSS"]
+  },
+  {
+    "id": 2,
+    "name": "Project 2",
+    "description": "Mollit eiusmod proident consequat dolor tempor ut enim reprehenderit non commodo cillum eu.",
+    "url": "https://github.com",
+    "github": "https://github.com",
+    "image": "https://placehold.co/600x400",
+    "techs": ["Express", "HTML", "CSS"]
+  },
+  {
+    "id": 3,
+    "name": "Project 3",
+    "description": "Aliqua veniam quis qui pariatur excepteur labore pariatur culpa.",
+    "url": "https://github.com",
+    "image": "https://placehold.co/600x400",
+    "techs": ["JS", "HTML", "CSS"]
+  },
+  {
+    "id": 4,
+    "name": "Project 4",
+    "description": "Aliqua veniam quis qui pariatur excepteur labore pariatur culpa.",
+    "url": "https://github.com",
+    "image": "https://placehold.co/600x400",
+    "techs": ["JS", "HTML", "CSS"]
+  }
+]

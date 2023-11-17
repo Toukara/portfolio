@@ -11,10 +11,10 @@
 
     <div class="navbar-menu" :class="{ 'is-active': showNav }">
       <div class="navbar-end">
-        <div class="navbar-item">
+        <div class="navbar-items">
           <a class="navbar-item" href="/about"> About </a>
-          <a class="navbar-item" href="/path"> Path </a>
-          <a class="navbar-item" href="/blog"> Blog </a>
+          <a class="navbar-item" href="/projects"> My Projects </a>
+          <a class="navbar-item" href="/contact"> Contact </a>
         </div>
       </div>
     </div>
@@ -54,6 +54,8 @@ export default {
 .navbar-menu {
   padding: 16px;
   background: none;
+  max-width: 1280px;
+  margin: 0 auto;
 }
 
 .navbar-burger {
@@ -68,12 +70,24 @@ export default {
   }
 }
 
-// every span in the burger need to have space between them to make it look like a hamburger
+.navbar-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
 .navbar-item {
   color: white;
+  letter-spacing: 0.65px;
   &:hover {
-    color: white;
+    // font-weight: 800;
+    color: #ee72e2;
+    background: none;
+    border: 1px solid #ee72e2;
+    animation: 0.4s ease-in-out 0s 1 normal none running;
+  }
+  &:focus {
+    color: #ee72e2;
     background: none;
   }
 }

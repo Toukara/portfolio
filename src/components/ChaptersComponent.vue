@@ -4,7 +4,7 @@
       <h2>.{{ index < 10 ? '0' + index : index }} -</h2>
       <h2>{{ title }}</h2>
     </div>
-    <p class="section-content">{{ content }}</p>
+    <p class="section-content" v-if="content">{{ content }}</p>
   </section>
 </template>
 
@@ -31,10 +31,12 @@ export default {
   flex-direction: column;
   gap: 0.3rem;
   color: white;
-  &:nth-child(even) {
-    background-color: red;
-    margin-bottom: 150px;
-  }
+  justify-content: center;
+
+  margin: 0 auto;
+  padding: 2rem;
+
+  max-width: 1280px;
 }
 
 .title {
@@ -59,6 +61,9 @@ export default {
   font-size: 1.15rem;
   max-width: 75vw;
   letter-spacing: 0.65px;
-  font-weight: 300;
+  font-weight: 200;
+  line-height: 1.5rem;
+
+  font-family: 'IBM Plex Sans', sans-serif;
 }
 </style>

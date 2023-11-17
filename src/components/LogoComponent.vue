@@ -1,12 +1,23 @@
 <template>
-  <div class="logo">BC.</div>
+  <div class="logo">
+    <router-link to="/"> <h1>BC.</h1></router-link>
+  </div>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
 .logo {
-  font-weight: 900;
-  letter-spacing: 1.5px;
-  font-size: 1.5rem;
-  text-transform: uppercase;
+  & h1 {
+    font-weight: 900;
+    letter-spacing: 1.5px;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: #ffffff;
+    cursor: pointer;
+
+    &:hover {
+      color: #ee72e2;
+      transition: 0.3s;
+    }
+  }
 }
 </style>
