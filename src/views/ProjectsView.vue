@@ -40,12 +40,23 @@ h1 {
   font-weight: 800;
   color: #ffffff;
 }
+
 .projects {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 2rem;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.75rem;
+
+  @media screen and (min-width: 1024px) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    align-items: flex-start;
+  }
 }
 
 .project {
@@ -58,6 +69,8 @@ h1 {
   margin-bottom: 2rem;
   width: 100%;
   max-width: 500px;
+  height: 650px;
+  max-height: 650px;
   border-radius: 10px;
   padding: 2rem;
   box-shadow: 0 0 10px #ee72e2;
@@ -66,14 +79,19 @@ h1 {
     font-size: 2rem;
     font-weight: 800;
     margin-bottom: 1rem;
+    align-self: center;
   }
 
   p {
-    font-size: 1.14rem;
+    font-size: 1rem;
     font-weight: 400;
     margin-bottom: 1rem;
     max-height: 100px;
-    overflow-y: auto;
+
+    overflow: hidden;
+    text-align: left;
+    line-height: 1.5rem;
+    text-overflow: ellipsis;
   }
 
   img {
