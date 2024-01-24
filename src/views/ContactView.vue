@@ -3,12 +3,12 @@
   <div class="container">
     <div class="contacts">
       <h1>Contact</h1>
-      <form class="inputs">
-        <input type="text" placeholder="Name" class="input" />
+      <form class="inputs" onsubmit="return false" ref="form">
+        <input type="text" placeholder="Name" class="input" name="user_name" />
         <input type="email" placeholder="Email" class="input" />
         <input type="text" placeholder="Subject" class="input" />
         <textarea placeholder="Message" class="textarea"></textarea>
-        <button class="button submit">SUBMIT</button>
+        <button class="button submit" @click="sendEmail">SUBMIT</button>
       </form>
     </div>
   </div>
@@ -18,6 +18,24 @@
 <script setup>
 import Navbar from '../components/NavbarComponent.vue'
 import Footer from '../components/FooterComponent.vue'
+
+import { ref } from 'vue'
+
+import emailjs from '@emailjs/browser'
+
+const form = ref(null)
+const inputFieldReset = ref(null)
+
+const sendEmail = () => {
+  emailjs.sendForm('service_n28ll6c', 'template_wr56qkm', form.value, '0gvfvcKdWwDgo_H_M').then(
+    (result) => {
+      alert(result.text)
+    },
+    (error) => {
+      alert(error.text)
+    }
+  )
+}
 </script>
 
 <style lang="scss" scoped>

@@ -1,6 +1,8 @@
 <template>
   <div class="logo">
-    <router-link to="/"> <h1>BC.</h1></router-link>
+    <router-link to="/">
+      <h1>benjamin <span>camus</span></h1></router-link
+    >
   </div>
 </template>
 
@@ -18,6 +20,10 @@
       color: #ee72e2;
       transition: 0.3s;
     }
+  }
+
+  & span {
+    color: #ee72e2;
   }
 }
 </style>

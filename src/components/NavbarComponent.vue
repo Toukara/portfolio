@@ -79,12 +79,16 @@ export default {
 .navbar-item {
   color: white;
   letter-spacing: 0.65px;
+  border-bottom: 2px solid transparent;
   &:hover {
     // font-weight: 800;
     color: #ee72e2;
     background: none;
-    border: 1px solid #ee72e2;
+    // add underline animation
+    border-bottom: 2px solid #ee72e2;
     animation: 0.4s ease-in-out 0s 1 normal none running;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
   }
   &:focus {
     color: #ee72e2;

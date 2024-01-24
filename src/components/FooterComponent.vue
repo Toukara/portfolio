@@ -5,7 +5,7 @@
     </div>
     <div class="contacts">
       <a href="https://github.com/Toukara" target="_blank">GitHub</a>
-      <a href="https://twitter.com/Benjamin_cms" target="_blank">Twitter</a>
+      <a href="https://twitter.com/Benjamincms_" target="_blank">Twitter</a>
       <a href="https://www.linkedin.com/in/benjamincamus01/" target="_blank">LinkedIn</a>
       <a href="mailto:camus.benjamin@hotmail.com" target="_blank">Mail</a>
     </div>
