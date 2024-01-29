@@ -5,12 +5,20 @@
       <h1>I am <span>Benjamin</span></h1>
     </div>
     <h2 class="auto-text">{{ text }}</h2>
+
+    <Links />
   </div>
 </template>
 
 <script>
+import Links from './Links.vue'
+
 export default {
   name: 'Hero',
+  components: {
+    Links
+  },
+
   data() {
     return {
       text: ''
@@ -82,7 +90,7 @@ export default {
   @keyframes gradient {
     to {
       @for $i from 1 through 10 {
-        background-position: random(100) + $randomPx random(100) + $randomPx; 
+        background-position: random(100) + $randomPx random(100) + $randomPx;
       }
     }
   }
