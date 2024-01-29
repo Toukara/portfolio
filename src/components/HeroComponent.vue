@@ -75,6 +75,7 @@ export default {
   background-size: cover;
   background-position: center;
   height: 75vh;
+  max-height: 75vh;
   padding: 2rem;
   margin-top: 5vh;
   margin-bottom: 5vh;
@@ -137,8 +138,11 @@ export default {
     }
 
     & span {
+      font-family: 'IBM Plex Sans', sans-serif;
+
       color: #ee72e2;
-      text-shadow: 2px 2px 4px rgba(238, 114, 226, 0.5);
+      text-shadow: 4px 2px 4px rgba(246, 55, 227, 0.816);
+      letter-spacing: 0.105em;
 
       &:hover {
         color: #ffffff;
