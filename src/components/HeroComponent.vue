@@ -11,7 +11,7 @@
 </template>
 
 <script>
-import Links from './Links.vue'
+import Links from './LinksWrapper.vue'
 
 export default {
   name: 'Hero',
@@ -198,7 +198,7 @@ export default {
   margin: 0 auto;
   white-space: nowrap;
   overflow: hidden;
-  font-size: 2.15vw;
+  font-size: 2vw;
   font-weight: bold;
   margin-top: 0.75em;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);

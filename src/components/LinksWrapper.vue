@@ -20,7 +20,7 @@ export default {
   justify-content: center;
   align-items: center;
   gap: 2.95rem;
-
+  letter-spacing: 0.65px;
   position: absolute;
   top: 75%;
 
@@ -31,8 +31,9 @@ export default {
 
     &:hover {
       color: #ee72e2;
-      // border: 1px solid #ffffff6c;
       background-color: transparent;
+
+      transition: 0.5s;
     }
   }
 }
