@@ -1,7 +1,8 @@
 <template>
   <div class="links">
-    <a class="navbar-item" href="/projects"> >_ Projects </a>
-    <a class="navbar-item" href="/contact"> >_ See More </a>
+    <a class="navbar-item" href="/projects"> >_ Take a look at my projects. </a>
+    <div class="folder"></div>
+    <a class="navbar-item" href="/contact"> >_ More details about me. </a>
     <a class="navbar-item" href="/contact" v-text="test"></a>
   </div>
 </template>
@@ -22,5 +23,17 @@ export default {
 
   position: absolute;
   top: 75%;
+
+  & a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.25rem;
+
+    &:hover {
+      color: #ee72e2;
+      // border: 1px solid #ffffff6c;
+      background-color: transparent;
+    }
+  }
 }
 </style>
