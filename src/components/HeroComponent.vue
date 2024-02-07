@@ -80,24 +80,24 @@ export default {
   margin-top: 5vh;
   margin-bottom: 5vh;
 
-  background-image: radial-gradient(rgb(30, 30, 30) 1px, transparent 0);
-  background-size: 40px 40px;
-  background-position: -19px -19px;
-  // add animation to background
-  animation: gradient 2s alternate infinite;
+  // background-image: radial-gradient(rgb(30, 30, 30) 1px, transparent 0);
+  // background-size: 40px 40px;
+  // background-position: -19px -19px;
+  // // add animation to background
+  // animation: gradient 2s alternate infinite;
 
-  $randomPx: 40px;
+  // $randomPx: 40px;
 
-  @keyframes gradient {
-    to {
-      @for $i from 1 through 10 {
-        background-position: random(100) + $randomPx random(100) + $randomPx;
-      }
-    }
-  }
+  // @keyframes gradient {
+  //   to {
+  //     @for $i from 1 through 10 {
+  //       background-position: random(100) + $randomPx random(100) + $randomPx;
+  //     }
+  //   }
+  // }
 
-  border-top: 0.5px solid rgba(255, 255, 255, 0.15);
-  border-bottom: 0.5px solid rgba(255, 255, 255, 0.15);
+  // border-top: 0.5px solid rgba(255, 255, 255, 0.15);
+  // border-bottom: 0.5px solid rgba(255, 255, 255, 0.15);
 
   @media screen and (max-width: 768px) {
     margin: 25vh auto;

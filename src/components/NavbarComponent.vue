@@ -50,6 +50,9 @@ export default {
 </script>
 
 <style scoped lang="scss">
+
+
+
 .navbar,
 .navbar-menu {
   padding: 16px;

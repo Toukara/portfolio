@@ -81,3 +81,26 @@ body {
   -ms-user-select: none; /* Internet Explorer/Edge */
   user-select: none;
 }
+
+body,
+html {
+  background-image: radial-gradient(#1e1e1e 1px, transparent 0);
+  background-size: 40px 40px;
+  background-position: -19px -19px;
+  animation: gradient 2s alternate infinite;
+}
+
+@keyframes gradient {
+  to {
+    background-position: 64px 112px;
+    background-position: 131px 103px;
+    background-position: 67px 42px;
+    background-position: 60px 109px;
+    background-position: 117px 136px;
+    background-position: 117px 55px;
+    background-position: 105px 108px;
+    background-position: 73px 91px;
+    background-position: 82px 85px;
+    background-position: 55px 96px;
+  }
+}

@@ -1,7 +1,6 @@
 <template>
   <div class="links">
     <a class="navbar-item" href="/projects"> >_ Take a look at my projects. </a>
-    <div class="folder"></div>
     <a class="navbar-item" href="/contact"> >_ More details about me. </a>
     <a class="navbar-item" href="/contact" v-text="test"></a>
   </div>
@@ -27,7 +26,7 @@ export default {
   & a {
     color: white;
     text-decoration: none;
-    font-size: 1.25rem;
+    font-size: 1.05vw;
 
     &:hover {
       color: #ee72e2;
@@ -35,6 +34,13 @@ export default {
 
       transition: 0.5s;
     }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .links {
+    display: flex;
+    flex-direction: column;
   }
 }
 </style>
