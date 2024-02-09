@@ -96,9 +96,6 @@ export default {
   //   }
   // }
 
-  // border-top: 0.5px solid rgba(255, 255, 255, 0.15);
-  // border-bottom: 0.5px solid rgba(255, 255, 255, 0.15);
-
   @media screen and (max-width: 768px) {
     margin: 25vh auto;
     margin-top: 5vh;

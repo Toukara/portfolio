@@ -50,6 +50,90 @@ export default {
 </script>
 
 <style scoped lang="scss">
+.navbar {
+  width: 950px;
+  padding: 3px;
+  margin: auto;
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+
+  // background-color: red;
+  // border-radius: 12px;
+  // background-color: rgba(35, 35, 35, 0.845);
+
+  // background: rgba(15, 15, 15, 0.659);
+  // background: transparent;
+  background: rgba(15, 15, 15, 0.659);
+
+  border-radius: 12px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(9.4px);
+  -webkit-backdrop-filter: blur(9.4px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.navbar-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-right: 1.5rem;
+}
+
+.navbar-item {
+  color: white;
+  letter-spacing: 0.65px;
+  border-bottom: 2px solid transparent;
+  &:hover {
+    // font-weight: 800;
+    color: #ee72e2;
+    background: none;
+    // add underline animation
+    border-bottom: 2px solid #ee72e2;
+    animation: 0.4s ease-in-out 0s 1 normal none running;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  &:focus {
+    color: #ee72e2;
+    background: none;
+  }
+}
+
+.navbar-burger {
+  span {
+    height: 2px;
+    width: 24px;
+  }
+  color: white;
+  &:hover {
+    color: white;
+    background: none;
+  }
+}
+
+.navbar-brand {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-left: 1.5rem;
+}
+
+.logo {
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  color: white;
+  text-decoration: none;
+  line-height: 0;
+}
+</style>
+
+<!--
+<style scoped lang="scss">
 
 
 
@@ -114,4 +198,4 @@ export default {
   text-decoration: none;
   line-height: 0;
 }
-</style>
+</style> -->
