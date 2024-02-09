@@ -17,20 +17,7 @@ const posts = ref([
   <main>
     <Navbar />
     <Hero />
-    <!-- <Chapters v-for="post in posts" :key="post.id" :title="post.title" :content="post.content" :index="post.id" />
-    <section class="projects">
-      <div class="project">
-        <img src="https://via.placeholder.com/300" />
-      </div>
-      <div class="project">
-        <img src="https://via.placeholder.com/300" />
-      </div>
-      <div class="project">
-        <img src="https://via.placeholder.com/300" />
-      </div>
-    </section>
-    <div class="more" @click="$router.push('/projects')">See more</div> -->
-    <!-- <Footer /> -->
+    <Footer class="footer" />
   </main>
 </template>
 
@@ -83,5 +70,10 @@ const posts = ref([
     border: 1px solid white;
     transition: 0.5s;
   }
+}
+
+footer {
+  position: relative;
+  bottom: 100px;
 }
 </style>

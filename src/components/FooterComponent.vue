@@ -1,6 +1,6 @@
 <template>
   <footer class="footer">
-    <div class="content has-text-centered">
+    <div class="content">
       <p>This site is made by <a href="https://github.com/Toukara" target="_blank">Camus Benjamin</a>.</p>
     </div>
     <div class="contacts">
@@ -25,6 +25,11 @@ export default {
 
 <style lang="scss" scoped>
 .footer {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  padding: 2rem;
+  gap: 1rem;
   background-color: #000000;
   border-top: 0.65px solid #ffffff96;
   margin-top: 95px;
@@ -36,10 +41,15 @@ export default {
 
   & a {
     color: #ee72e2;
-    &:hover{
+    &:hover {
       color: #ffffff;
     }
   }
+}
+
+.content {
+  position: relative;
+  left: 40%;
 }
 
 .contacts {
@@ -47,6 +57,9 @@ export default {
   flex-direction: row;
   gap: 0.85em;
   justify-content: center;
+
+  position: relative;
+  left: 65%;
 
   & a {
     padding: 0.55em 0.95em;
