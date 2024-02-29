@@ -12,12 +12,9 @@
       </form>
     </div>
   </div>
-  <Footer />
 </template>
-
 <script setup>
 import Navbar from '../components/NavbarComponent.vue'
-import Footer from '../components/FooterComponent.vue'
 
 import { ref } from 'vue'
 
