@@ -1,8 +1,7 @@
 <template>
   <div class="links">
     <a class="navbar-item" href="/projects"> >_ Take a look at my projects. </a>
-    <a class="navbar-item" href="/contact"> >_ More details about me. </a>
-    <a class="navbar-item" href="/contact" v-text="test"></a>
+    <a class="navbar-item" href="/about"> >_ More details about me. </a>
   </div>
 </template>
 

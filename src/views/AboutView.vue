@@ -2,12 +2,15 @@
   <Navbar />
   <div class="container">
     <div class="about">
-      <h1>About Benjamin !</h1>
-      <p>Hello there! I'm Benjamin, a passionate full-stack developer based in the beautiful country of France. With a keen interest in web development, I specialize in Vue.js, though my adaptable nature allows me to seamlessly transition to other frameworks as needed.</p>
-      <p>My journey into the world of programming began in 2019, driven by a relentless curiosity and a desire to create. As a self-taught developer, I've embraced the challenges and joys of learning independently, constantly pushing myself to expand my skills and deepen my understanding of the ever-evolving landscape of web technologies.</p>
-      <p>In every project, I strive to blend creativity with functionality, crafting elegant solutions that not only meet the needs of the user but also leave a lasting impression. Whether it's building intuitive user interfaces, architecting robust backend systems, or optimizing performance, I approach each task with enthusiasm and dedication.</p>
-      <p>When I'm not coding, you can find me around a table of table tennis, listening lot of music, watching animes or just spending time with my friends.</p>
-      <p>Thank you for visiting my portfolio. I'm excited to share my journey with you and collaborate on exciting projects together. Let's build something amazing!</p>
+      <h1>About Benjamin!</h1>
+      <p>Hey there! I'm <span>Benjamin</span>, a fullstack developer living in France. I'm passionate about technology, and I have a soft spot for Vue.js, though I'm pretty adaptable and can switch gears to other frameworks when needed.</p>
+      <p>~ in 2019 I took my first steps into the world of programming as self-taught, I enjoyed the challenges, constantly pushing myself to expand my skills and keep up with the ever-evolving landscape of web technologies.</p>
+      <p>When I tackle a project, my keen eye for detail, insatiable curiosity, and serious dedication shine through. I blend creativity with pragmatism, crafting solutions that leave a mark. Whether perfecting user interfaces, building robust systems, or adapting to new challenges, I approach each task with precision and enthusiasm.</p>
+      <p>When I'm not lost in code, you might find me around a table tennis table or watching some matches, listening music, watching anime, or simply chilling with my friends.</p>
+      <p>Thanks for visiting my portfolio! I'm excited to share my journey with you and potentially collaborate on some exciting projects. Let's make something incredible together!</p>
+
+      <p><a href="https://github.com/Toukara" target="_blank">Github</a> | <a href="https://twitter.com/Benjamincms_" target="_blank">Twitter</a> | LinkedIn</p>
+      <Links />
     </div>
   </div>
 </template>
@@ -37,6 +40,19 @@ export default {
   justify-content: left;
   gap: 3rem;
 
+  border-radius: 12px;
+  border: 1px solid rgba(137, 137, 137, 0.044);
+
+  background-color: rgba(23, 23, 23, 0.23);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+
+  margin: 14vw;
+  margin-top: 5vh;
+  padding: 2rem;
+  height: 83vh;
+  width: 75vw;
+
   p {
     font-size: 1.35rem;
     line-height: 1.75rem;
@@ -50,6 +66,18 @@ export default {
     text-decoration-color: #ee72e2;
     text-underline-offset: 8px;
     text-decoration-thickness: 3px;
+  }
+
+  span {
+    color: #ee72e2;
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+    &:hover {
+      color: #ee72e2;
+    }
   }
 }
 </style>

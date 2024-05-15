@@ -15,6 +15,7 @@
           <!-- <a class="navbar-item" href="/about"> About </a>
           <a class="navbar-item" href="/projects"> My Projects </a>
           <a class="navbar-item" href="/contact"> Contact </a> -->
+          <router-link to="/" class="navbar-item" :class="{ 'is-active': $route.path === '/' }">Home</router-link>
           <router-link to="/about" class="navbar-item" :class="{ 'is-active': $route.path === '/about' }">About</router-link>
           <router-link to="/projects" class="navbar-item" :class="{ 'is-active': $route.path === '/projects' }">Projects</router-link>
           <router-link to="/contact" class="navbar-item" :class="{ 'is-active': $route.path === '/contact' }">Contact</router-link>
@@ -61,12 +62,6 @@ export default {
   display: flex;
   align-items: center;
 
-  // background-color: red;
-  // border-radius: 12px;
-  // background-color: rgba(35, 35, 35, 0.845);
-
-  // background: rgba(15, 15, 15, 0.659);
-  // background: transparent;
   background: rgba(15, 15, 15, 0.659);
 
   border-radius: 12px;

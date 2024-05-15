@@ -80,6 +80,17 @@ export default {
   margin-top: 5vh;
   margin-bottom: 5vh;
 
+  /* From https://css.glass */
+  border-radius: 12px;
+  border: 1px solid rgba(137, 137, 137, 0.044);
+
+  background-color: rgba(23, 23, 23, 0.23);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+
+  margin: 14vw;
+  margin-top: 5vh;
+
   -webkit-touch-callout: none; /* iOS Safari */
   -webkit-user-select: none; /* Safari */
   -khtml-user-select: none; /* Konqueror HTML */
