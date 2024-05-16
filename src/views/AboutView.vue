@@ -3,13 +3,13 @@
   <div class="container">
     <div class="about">
       <h1>About Benjamin!</h1>
-      <p>Hey there! I'm <span>Benjamin</span>, a fullstack developer living in France. I'm passionate about technology, and I have a soft spot for Vue.js, though I'm pretty adaptable and can switch gears to other frameworks when needed.</p>
+      <p>Hey there! I'm <a href="https://github.com/Toukara" target="_blank" class="pink">Benjamin</a>, a fullstack developer living in France. I'm passionate about technology, and I have a soft spot for Vue.js, though I'm pretty adaptable and can switch gears to other frameworks when needed.</p>
       <p>~ in 2019 I took my first steps into the world of programming as self-taught, I enjoyed the challenges, constantly pushing myself to expand my skills and keep up with the ever-evolving landscape of web technologies.</p>
       <p>When I tackle a project, my keen eye for detail, insatiable curiosity, and serious dedication shine through. I blend creativity with pragmatism, crafting solutions that leave a mark. Whether perfecting user interfaces, building robust systems, or adapting to new challenges, I approach each task with precision and enthusiasm.</p>
       <p>When I'm not lost in code, you might find me around a table tennis table or watching some matches, listening music, watching anime, or simply chilling with my friends.</p>
       <p>Thanks for visiting my portfolio! I'm excited to share my journey with you and potentially collaborate on some exciting projects. Let's make something incredible together!</p>
 
-      <p><a href="https://github.com/Toukara" target="_blank">Github</a> | <a href="https://twitter.com/Benjamincms_" target="_blank">Twitter</a> | LinkedIn</p>
+      <p><a href="https://github.com/Toukara" target="_blank">Github</a> | <a href="https://twitter.com/Benjamincms_" target="_blank">Twitter</a> | <a href="https://www.linkedin.com" target="_blank">LinkedIn</a></p>
       <Links />
     </div>
   </div>
@@ -77,6 +77,17 @@ export default {
     text-decoration: none;
     &:hover {
       color: #ee72e2;
+    }
+  }
+
+  .pink {
+    color: #ee72e2;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    &:hover {
+      text-decoration: underline;
     }
   }
 }

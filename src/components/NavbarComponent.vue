@@ -62,13 +62,12 @@ export default {
   display: flex;
   align-items: center;
 
-  background: rgba(15, 15, 15, 0.659);
-
   border-radius: 12px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(9.4px);
-  -webkit-backdrop-filter: blur(9.4px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  border: 1px solid rgba(137, 137, 137, 0.044);
+
+  background-color: rgba(23, 23, 23, 0.23);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
 }
 
 .navbar-items {
