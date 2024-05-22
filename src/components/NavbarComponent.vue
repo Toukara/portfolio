@@ -63,7 +63,7 @@ export default {
   align-items: center;
 
   border-radius: 12px;
-  border: 1px solid rgba(137, 137, 137, 0.044);
+  border: 1px solid rgba(212, 212, 212, 0.315);
 
   background-color: rgba(23, 23, 23, 0.23);
   backdrop-filter: blur(5px);

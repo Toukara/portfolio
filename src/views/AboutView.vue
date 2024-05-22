@@ -2,7 +2,7 @@
   <Navbar />
   <div class="container">
     <div class="about">
-      <h1>About Benjamin!</h1>
+      <h1>About me!</h1>
       <p>Hey there! I'm <a href="https://github.com/Toukara" target="_blank" class="pink">Benjamin</a>, a fullstack developer living in France. I'm passionate about technology, and I have a soft spot for Vue.js, though I'm pretty adaptable and can switch gears to other frameworks when needed.</p>
       <p>~ in 2019 I took my first steps into the world of programming as self-taught, I enjoyed the challenges, constantly pushing myself to expand my skills and keep up with the ever-evolving landscape of web technologies.</p>
       <p>When I tackle a project, my keen eye for detail, insatiable curiosity, and serious dedication shine through. I blend creativity with pragmatism, crafting solutions that leave a mark. Whether perfecting user interfaces, building robust systems, or adapting to new challenges, I approach each task with precision and enthusiasm.</p>
