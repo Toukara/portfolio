@@ -1,7 +1,7 @@
 <template>
   <div class="hero">
     <div class="hero-text">
-      <h1>Hello World !,</h1>
+      <h1>{{ translations.test }}</h1>
       <h1>I am <span>Benjamin</span></h1>
     </div>
     <h2 class="auto-text">{{ text }}</h2>
@@ -11,8 +11,10 @@
 </template>
 
 <script>
-import Links from './LinksWrapper.vue'
+import { computed } from 'vue'
 
+import Links from './LinksWrapper.vue'
+import { translations, setLanguage, currentLanguage } from '../assets/translation'
 export default {
   name: 'Hero',
   components: {
@@ -57,12 +59,16 @@ export default {
           setTimeout(typeText, maxWordLength * 50)
         }
       }
-
       typeText()
     }
   },
   mounted() {
     this.changeText()
+  },
+  setup() {
+    const trans = computed(() => translations.value)
+    const lang = currentLanguage
+    return { translations: trans, currentLanguage: lang }
   }
 }
 </script>

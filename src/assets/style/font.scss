@@ -1,0 +1,27 @@
+$font-family_1: 'DM Sans', sans-serif;
+$font-family_2: 'IBM Plex Sans', sans-serif;
+
+@import "https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;1,9..40,400&display=swap";
+@import "https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200;300&display=swap";
+h1 {
+	font-family: $font-family_1;
+}
+h2 {
+	font-family: $font-family_2;
+}
+div {
+	font-family: $font-family_1;
+}
+p {
+	font-family: $font-family_1;
+	font-size: 16px;
+}
+ul {
+	font-family: $font-family_1;
+}
+ol {
+	font-family: $font-family_1;
+}
+* {
+	font-family: $font-family_1;
+}

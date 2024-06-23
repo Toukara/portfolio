@@ -1,0 +1,118 @@
+// Define default theme variables
+$background-light: rgba(237, 237, 237, 0.944);
+$text-light: rgb(29, 29, 29);
+$link-light: #1a73e8;
+$highlight-light: #ee72e2;
+
+$background-dark: rgb(17, 17, 17);
+$text-dark: rgb(226, 226, 226);
+$link-dark: #90caf9;
+$highlight-dark: #ee72e2;
+
+// Mixins for themes
+@mixin light-theme {
+  background-color: $background-light;
+  color: $text-light;
+
+  body {
+    background-color: $background-light;
+  }
+
+  .logo {
+    & h1 {
+      font-weight: 900;
+      font-weight: 900;
+      letter-spacing: 1.5px;
+      font-size: 1.5rem;
+      text-transform: uppercase;
+      color: $text-light;
+      cursor: pointer;
+
+      &:hover {
+        color: $highlight-light;
+        transition: 0.3s;
+      }
+    }
+  }
+
+  .navbar {
+    background-color: $background-light;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.37);
+    color: $text-light;
+  }
+
+  .navbar-item {
+    color: $text-light;
+    &:hover,
+    &:focus,
+    &.is-active {
+      color: $highlight-light;
+      border-bottom-color: $highlight-light;
+    }
+  }
+
+  .navbar-burger {
+    color: $text-light;
+    span {
+      background-color: $text-light;
+    }
+  }
+}
+
+@mixin dark-theme {
+  background-color: $background-dark;
+  color: $text-dark;
+
+  body {
+    background-color: $background-dark;
+  }
+
+  .logo {
+    & h1 {
+      font-weight: 900;
+      font-weight: 900;
+      letter-spacing: 1.5px;
+      font-size: 1.5rem;
+      text-transform: uppercase;
+      color: $text-dark;
+      cursor: pointer;
+
+      &:hover {
+        color: $highlight-dark;
+        transition: 0.3s;
+      }
+    }
+  }
+
+  .navbar {
+    background-color: $background-dark;
+    color: $text-dark;
+    box-shadow: 0 4px 8px 0 rgba(43, 43, 43, 0.37);
+  }
+
+  .navbar-item {
+    color: $text-dark;
+    &:hover,
+    &:focus,
+    &.is-active {
+      color: $highlight-dark;
+      border-bottom-color: $highlight-dark;
+    }
+  }
+
+  .navbar-burger {
+    color: $text-dark;
+    span {
+      background-color: $text-dark;
+    }
+  }
+}
+
+// Apply themes using the data-theme attribute
+[data-theme='light-theme'] {
+  @include light-theme;
+}
+
+[data-theme='dark-theme'] {
+  @include dark-theme;
+}

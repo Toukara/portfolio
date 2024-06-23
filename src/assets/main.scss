@@ -1,0 +1,62 @@
+$color_2: white;
+
+@import './base.scss';
+
+@import './style/font.scss';
+@import './style/theme.scss';
+@import './style/animation.scss';
+
+@import './style/navbar.scss';
+
+@import 'https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css';
+
+#app {
+  margin: 0 auto;
+  font-weight: normal;
+}
+a {
+  text-decoration: none;
+  transition: 0.4s;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+p {
+  color: $color_2;
+}
+h1 {
+  color: $color_2;
+}
+h2 {
+  color: $color_2;
+}
+h3 {
+  color: $color_2;
+}
+h4 {
+  color: $color_2;
+}
+h5 {
+  color: $color_2;
+}
+h6 {
+  color: $color_2;
+}
+
+body {
+  height: 100%;
+  overflow: hidden;
+
+  line-height: 1.6;
+  font-size: 15px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+
+  cursor: crosshair;
+}

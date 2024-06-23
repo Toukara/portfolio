@@ -1,0 +1,53 @@
+.navbar {
+  width: 950px;
+  padding: 3px;
+  margin: auto;
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  border-radius: 12px;
+
+  backdrop-filter: blur(25px);
+  -webkit-backdrop-filter: blur(25px);
+  border: 1px solid rgba(171, 171, 171, 0.315);
+
+  .navbar-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 1.5rem;
+  }
+
+  .navbar-item {
+    letter-spacing: 0.65px;
+    border-bottom: 2px solid transparent;
+    &:hover {
+      background-color: transparent;
+      animation: 0.4s ease-in-out 0s 1 normal none running;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+    }
+  }
+
+  .navbar-burger {
+    span {
+      height: 2px;
+      width: 24px;
+    }
+  }
+
+  .navbar-brand {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 1.5rem;
+  }
+
+  .logo {
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    line-height: 0;
+  }
+}
