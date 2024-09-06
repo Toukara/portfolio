@@ -7,11 +7,11 @@ export default {
 <template>
   <div class="about">
     <h1>About me!</h1>
-    <p>Hey there! I'm <a href="https://github.com/Toukara" target="_blank" class="pink">Benjamin</a>, a fullstack developer living in France. I'm passionate about technology, and I have a soft spot for Vue.js, though I'm pretty adaptable and can switch gears to other frameworks when needed.</p>
-    <p>~ in 2019 I took my first steps into the world of programming as self-taught, I enjoyed the challenges, constantly pushing myself to expand my skills and keep up with the ever-evolving landscape of web technologies.</p>
-    <p>When I tackle a project, my keen eye for detail, insatiable curiosity, and serious dedication shine through. I blend creativity with pragmatism, crafting solutions that leave a mark. Whether perfecting user interfaces, building robust systems, or adapting to new challenges, I approach each task with precision and enthusiasm.</p>
-    <p>When I'm not lost in code, you might find me around a table tennis table or watching some matches, listening music, watching anime, or simply chilling with my friends.</p>
-    <p>Thanks for visiting my portfolio! I'm excited to share my journey with you and potentially collaborate on some exciting projects. Let's make something incredible together!</p>
+    <p>Hey there! I'm <a href="https://github.com/Toukara" target="_blank" class="pink">Benjamin</a>, a fullstack developer living in France. I’m passionate about technology and love building things that solve real problems. While Vue.js is my favorite tool, I am always ready to explore other frameworks and adapt to whatever the project needs.</p>
+    <p>I began my coding journey in 2019, teaching myself along the way. I always enjoyed the challenge of learning new things and keeping up with the fast pace of web development.</p>
+    <p>When I am working on a project, I am all about the details, staying curious, and giving it my best shot. I love mixing creativity with practical, real-world solutions. Whether I am refining user interfaces, building solid systems, or facing a new challenge, I tackle each task with enthusiasm and precision.</p>
+    <p>When I am not coding, I am probably playing or watching table tennis, listening to music, watching anime, or just relaxing with friends.</p>
+
 
     <p><a href="https://github.com/Toukara" target="_blank">Github</a> | <a href="https://twitter.com/Benjamincms_" target="_blank">Twitter</a> | <a href="https://www.linkedin.com" target="_blank">LinkedIn</a></p>
     <Links />

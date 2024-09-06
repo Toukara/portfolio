@@ -12,8 +12,9 @@
     <div class="navbar-menu" :class="{ 'is-active': showNav }">
       <div class="navbar-end">
         <div class="theme">
-          <p>Theme used : {{ userTheme }}</p>
-          <button class="theme-button" @click="changeTheme">Change theme</button>
+          <div :class="['theme-toggle', { dark: userTheme === 'dark-theme' }]" @click="changeTheme">
+            <div class="toggle-switch"></div>
+          </div>
         </div>
         <div class="navbar-items">
           <router-link to="/" class="navbar-item" :class="{ 'is-active': $route.path === '/' }">Home</router-link>

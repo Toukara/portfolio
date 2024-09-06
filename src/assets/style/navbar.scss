@@ -14,7 +14,7 @@
   .navbar-items {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: baseline;
     margin-right: 1.5rem;
   }
 
@@ -49,5 +49,11 @@
     font-size: 1.8rem;
     text-transform: uppercase;
     line-height: 0;
+  }
+
+  .navbar-end {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
   }
 }
