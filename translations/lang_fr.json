@@ -1,0 +1,52 @@
+{
+  "nav": {
+    "about": "À propos",
+    "skills": "Compétences",
+    "projects": "Projets",
+    "contact": "Contact"
+  },
+  "hero": {
+    "eyebrow": ["Fullstack Web Developer", "Developer", "AAAAAAAAAA"],
+    "title1": "Hi, I'm",
+    "title2": "Benjamin.",
+    "sub": "Passionné par le code propre et le design soigné, je construis des interfaces modernes qui allient performance et esthétique.",
+    "cta1": "Voir mes projets",
+    "cta2": "Me contacter",
+    "scroll": "Scroll"
+  },
+  "about": {
+    "title": "Je suis Benjamin.",
+    "p1": "Développeur web avec 5 ans d'expérience, je travaille aussi bien côté front-end que back-end. J'aime résoudre des problèmes complexes avec des solutions élégantes.",
+    "p2": "Basé à Paris, je collabore avec des startups et des agences pour créer des produits digitaux qui ont du sens et de l'impact.",
+    "stat1": "Années d'expérience",
+    "stat2": "Projets livrés",
+    "stat3": "Clients satisfaits",
+    "stat4": "Cafés bus"
+  },
+  "skills": {
+    "title": "Mon stack"
+  },
+  "projects": {
+    "title": "Ce que j'ai construit",
+    "all": "Voir tout →",
+    "live": "Voir le site",
+    "p1": {
+      "title": "Plateforme SaaS Analytics",
+      "desc": "Dashboard temps réel pour suivre les métriques clés d'une application. Authentification, rôles, visualisations dynamiques et export PDF."
+    },
+    "p2": {
+      "title": "App de gestion de tâches",
+      "desc": "Outil collaboratif avec drag-and-drop, notifications en temps réel et intégration Slack."
+    },
+    "p3": {
+      "title": "E-commerce headless",
+      "desc": "Boutique en ligne avec CMS headless, panier persistant et paiement Stripe."
+    }
+  },
+  "contact": {
+    "eyebrow": "Travaillons ensemble",
+    "title": "Vous avez un projet<br>en tête&nbsp;?",
+    "sub": "Je suis disponible pour des missions freelance et des opportunités full-time. N'hésitez pas à me contacter.",
+    "cta": "Dire bonjour 👋"
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "nav": {
+    "about": "",
+    "skills": "",
+    "projects": "",
+    "contact": ""
+  },
+  "hero": {
+    "eyebrow": [],
+    "title1": "",
+    "title2": "",
+    "sub": "",
+    "cta1": "",
+    "cta2": "",
+    "scroll": ""
+  },
+  "about": {
+    "title": "",
+    "p1": "",
+    "p2": "",
+    "stat1": "",
+    "stat2": "",
+    "stat3": "",
+    "stat4": ""
+  },
+  "skills": {
+    "title": ""
+  },
+  "projects": {
+    "title": "",
+    "all": "",
+    "live": "",
+    "p1": {
+      "title": "",
+      "desc": ""
+    },
+    "p2": {
+      "title": "",
+      "desc": ""
+    },
+    "p3": {
+      "title": "",
+      "desc": ""
+    }
+  },
+  "contact": {
+    "eyebrow": "",
+    "title": "",
+    "sub": "",
+    "cta": ""
+  }
+}
