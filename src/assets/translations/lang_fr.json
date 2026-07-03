@@ -1,0 +1,57 @@
+{
+  "nav": {
+    "about": "À propos",
+    "skills": "Compétences",
+    "projects": "Projets",
+    "contact": "Contact"
+  },
+  "hero": {
+    "eyebrow": [
+      "Web Integrator",
+      "Backend Developer",
+      "Frontend Developer",
+      "Fullstack Developer"
+    ],
+    "title1": "Hi, I'm",
+    "title2": "Benjamin.",
+    "sub": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "cta1": "Voir mes projets",
+    "cta2": "Me contacter",
+    "scroll": "Défiler"
+  },
+  "about": {
+    "title": "je suis Benjamin.",
+    "p1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "p2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "stat1": "Years of experience",
+    "stat2": "Projects delivered",
+    "stat3": "Satisfied clients",
+    "stat4": "Cups of coffee"
+  },
+  "skills": {
+    "title": "Mon stack"
+  },
+  "projects": {
+    "title": "Ce que j'ai fait",
+    "all": "Voir tout",
+    "live": "Voir le site",
+    "p1": {
+      "title": "",
+      "desc": ""
+    },
+    "p2": {
+      "title": "",
+      "desc": ""
+    },
+    "p3": {
+      "title": "",
+      "desc": ""
+    }
+  },
+  "contact": {
+    "eyebrow": "Travaillons ensemble",
+    "title": "Lorem ipsum dolor sit amet<br>consectetur&nbsp;adipiscing&nbsp;elit&nbsp;?",
+    "sub": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "cta": "Dire bonjour 👋"
+  }
+}

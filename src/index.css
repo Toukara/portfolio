@@ -1,3 +1,5 @@
+@import "./assets/_reset.css";
+
 /* ── TOKENS ── */
 :root {
   --bg: #fafaf8;
@@ -222,7 +224,7 @@ section {
 .hero-eyebrow-wrapper {
   display: flex;
   align-items: baseline;
-  gap: 4px;
+  gap: 12px;
   margin-bottom: 28px;
   height: 16px;
 }
