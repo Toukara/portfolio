@@ -1,5 +1,3 @@
-import moonSVG from "../../assets/moon.svg";
-import sunSVG from "../../assets/sun.svg";
 import { useTranslation } from "../../i18n";
 import { useTheme } from "../../utils/theme";
 
@@ -35,12 +33,7 @@ export const ThemeSwitcher = () => {
   return (
     <div className="theme-switcher">
       <button className="ctrl-btn" id="theme-btn" onClick={toggle}>
-        <img
-          src={theme === "dark" ? sunSVG : moonSVG}
-          alt={theme === "dark" ? "Sun icon" : "Moon icon"}
-          width={20}
-          height={20}
-        />
+        <span id="theme-label">{theme === "dark" ? "Dark" : "Light"}</span>
       </button>
     </div>
   );
