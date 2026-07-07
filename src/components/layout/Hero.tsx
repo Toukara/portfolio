@@ -1,29 +1,70 @@
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { useTranslation } from "../../i18n";
 
 export default function Hero() {
   const { t } = useTranslation();
   const eyebrow = t("hero.eyebrow");
-  const [eyebrowText, setEyebrowText] = useState<string>(() => {
-    if (Array.isArray(eyebrow)) {
-      return eyebrow[0] ?? "";
-    }
-    return eyebrow ?? "";
-  });
+  const phrases = useMemo(
+    () => (Array.isArray(eyebrow) ? eyebrow : [eyebrow ?? ""]),
+    [eyebrow],
+  );
+  const [eyebrowText, setEyebrowText] = useState("");
+  const [currentPhraseIndex, setCurrentPhraseIndex] = useState(0);
+  const [charIndex, setCharIndex] = useState(0);
+  const [isDeleting, setIsDeleting] = useState(false);
 
   useEffect(() => {
-    const value = Array.isArray(eyebrow)
-      ? eyebrow[Math.floor(Math.random() * eyebrow.length)]
-      : eyebrow;
+    const resetId = window.setTimeout(() => {
+      if (!phrases.length || !phrases[0]) {
+        setEyebrowText("");
+        setCurrentPhraseIndex(0);
+        setCharIndex(0);
+        setIsDeleting(false);
+        return;
+      }
+
+      setEyebrowText("");
+      setCurrentPhraseIndex(0);
+      setCharIndex(0);
+      setIsDeleting(false);
+    }, 0);
+
+    return () => {
+      window.clearTimeout(resetId);
+    };
+  }, [phrases]);
+
+  useEffect(() => {
+    if (!phrases.length || !phrases[0]) {
+      return;
+    }
+
+    const currentPhrase = phrases[currentPhraseIndex] ?? "";
+    const hasFinishedTyping = !isDeleting && charIndex >= currentPhrase.length;
+    const delay = hasFinishedTyping ? 1200 : isDeleting ? 45 : 80;
 
     const timer = window.setTimeout(() => {
-      setEyebrowText(value ?? "");
-    }, 0);
+      if (!isDeleting) {
+        if (charIndex < currentPhrase.length) {
+          setEyebrowText(currentPhrase.slice(0, charIndex + 1));
+          setCharIndex((prev) => prev + 1);
+        } else {
+          setIsDeleting(true);
+        }
+      } else if (charIndex > 0) {
+        setEyebrowText(currentPhrase.slice(0, charIndex - 1));
+        setCharIndex((prev) => prev - 1);
+      } else {
+        setIsDeleting(false);
+        setCurrentPhraseIndex((prev) => (prev + 1) % phrases.length);
+        setCharIndex(0);
+      }
+    }, delay);
 
     return () => {
       window.clearTimeout(timer);
     };
-  }, [eyebrow]);
+  }, [phrases, currentPhraseIndex, charIndex, isDeleting]);
 
   return (
     <section id="hero">
@@ -32,7 +73,11 @@ export default function Hero() {
         <span className="hero-eyebrow-cursor"></span>
       </p>
 
-      <h1 className="hero-title">
+      <h1
+        className="hero-title"
+        aria-label={`${t("hero.title1")} ${t("hero.title2")}`}
+        style={{ textTransform: "uppercase" }}
+      >
         <span id="hero-title1">{t("hero.title1")}</span>
         <br />
         <span id="hero-title2">{t("hero.title2")}</span>

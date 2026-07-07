@@ -1,6 +1,5 @@
 {
   "nav": {
-    "about": "À propos",
     "skills": "Compétences",
     "projects": "Projets",
     "contact": "Contact"
@@ -19,17 +18,27 @@
     "cta2": "Me contacter",
     "scroll": "Défiler"
   },
-  "about": {
-    "title": "je suis Benjamin.",
-    "p1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "p2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "stat1": "Years of experience",
-    "stat2": "Projects delivered",
-    "stat3": "Satisfied clients",
-    "stat4": "Cups of coffee"
-  },
   "skills": {
-    "title": "Mon stack"
+    "eyebrow": "Mes compétences",
+    "language": {
+      "name": "Langages",
+      "JavaScript": "JavaScript",
+      "TypeScript": "TypeScript"
+    },
+    "framework": {
+      "name": "Frameworks",
+      "React": "React",
+      "Vue": "Vue"
+    },
+    "database": {
+      "name": "Bases de données",
+      "MongoDB": "MongoDB",
+      "MySQL": "MySQL"
+    },
+    "other": {
+      "name": "Autres",
+      "scrapping": "Scraping"
+    }
   },
   "projects": {
     "title": "Ce que j'ai fait",

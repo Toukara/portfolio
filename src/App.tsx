@@ -1,31 +1,18 @@
-import { useEffect } from "react";
+// import { useEffect } from "react";
 import "./App.css";
+import CustomCursor from "./components/CustomCursor";
 
-import Hero from "./components/layout/Hero";
-import Navbar from "./components/layout/Navbar";
+import { Navbar, Hero, Skills } from "./components/layout/_index";
 
 function App() {
-  useEffect(() => {
-    const cursor = document.getElementById("cursor");
-    const handleMouseMove = (e: MouseEvent) => {
-      if (cursor instanceof HTMLElement) {
-        cursor.style.left = e.pageX + "px";
-        cursor.style.top = e.pageY + "px";
-      }
-    };
-
-    window.addEventListener("mousemove", handleMouseMove);
-
-    return () => {
-      window.removeEventListener("mousemove", handleMouseMove);
-    };
-  }, []);
+  CustomCursor();
 
   return (
     <div className="App">
-      <div className="cursor" id="cursor"></div>
+      <div id="cursor"></div>
       <Navbar />
       <Hero />
+      <Skills />
     </div>
   );
 }

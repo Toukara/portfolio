@@ -1,4 +1,6 @@
 @import "./assets/_reset.css";
+@import url("https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
 
 /* ── TOKENS ── */
 :root {
@@ -42,7 +44,7 @@ html {
 body {
   background: var(--bg);
   color: var(--fg);
-  font-family: "Inter", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   line-height: 1.6;
   cursor: none;
@@ -50,6 +52,7 @@ body {
     background var(--transition),
     color var(--transition);
   overflow-x: hidden;
+  user-select: none;
 }
 a {
   color: inherit;
@@ -83,9 +86,24 @@ img {
 #cursor.hover {
   width: 36px;
   height: 36px;
-  background: transparent;
   border: 1.5px solid var(--accent);
+  background: color-mix(in srgb, var(--accent) 4%, transparent);
+  backdrop-filter: blur(1.5px);
+  -webkit-backdrop-filter: blur(1.5px);
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.08);
 }
+
+#cursor.hover-logo {
+  width: 170px;
+  height: 48px;
+  background: color-mix(in srgb, var(--accent) 4%, transparent);
+  border: 1.5px solid color-mix(in srgb, var(--accent) 65%, transparent);
+  border-radius: 999px;
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.08);
+}
+
 #cursor.click {
   width: 8px;
   height: 8px;
@@ -149,10 +167,14 @@ nav.scrolled {
 }
 .nav-links {
   display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   gap: 36px;
   list-style: none;
 }
-.nav-links a {
+.nav-links a,
+.nav-links p {
   font-size: 13px;
   font-weight: 500;
   color: var(--fg-2);
@@ -173,7 +195,7 @@ nav.scrolled {
   border: none;
   border-radius: 8px;
   padding: 7px 14px;
-  font-family: "Inter", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 12px;
   font-weight: 500;
   color: var(--tag-fg);
@@ -730,51 +752,6 @@ footer {
   transform: translateY(0);
 }
 
-/* ── RESPONSIVE ── */
-@media (max-width: 768px) {
-  nav {
-    padding: 18px 24px;
-  }
-  .nav-links {
-    display: none;
-  }
-  section {
-    padding: 80px 24px;
-  }
-  #hero {
-    padding-left: 24px;
-    padding-right: 24px;
-  }
-  .hero-scroll {
-    left: 24px;
-  }
-  .about-grid {
-    grid-template-columns: 1fr;
-    gap: 48px;
-  }
-  .projects-grid {
-    grid-template-columns: 1fr;
-  }
-  .project-card.featured {
-    grid-column: span 1;
-  }
-  footer {
-    flex-direction: column;
-    gap: 8px;
-    text-align: center;
-    padding: 24px;
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  *,
-  *::before,
-  *::after {
-    animation-duration: 0.01ms !important;
-    transition-duration: 0.01ms !important;
-  }
-}
-
 #goTop {
   display: flex;
   align-items: center;
@@ -793,4 +770,71 @@ footer {
   transition:
     opacity var(--transition),
     transform var(--transition);
+}
+
+/* ── SKILLS SECTION ── */
+#skills {
+  padding: 80px 48px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.skills-eyebrow {
+  font-family: "Syne", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--accent);
+  margin-bottom: 24px;
+}
+
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 32px;
+  margin-top: 48px;
+}
+
+.skills-category {
+  padding: 28px;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  transition: all var(--transition);
+}
+
+.skills-category h3 {
+  font-family: "Syne", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--fg);
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.skills-category h3::before {
+  content: "";
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  background: var(--accent);
+  border-radius: 50%;
+}
+
+.skills-category ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.skills-category li {
+  font-size: 14px;
+  color: var(--fg-2);
+  padding-left: 12px;
+  position: relative;
+  transition: color var(--transition);
 }

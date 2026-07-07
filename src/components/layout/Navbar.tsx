@@ -4,81 +4,68 @@ import { LanguageSwitcher, ThemeSwitcher } from "../button/buttons";
 export default function Navbar() {
   const { t } = useTranslation();
 
+  document.addEventListener("scroll", () => {
+    const nav = document.getElementById("nav");
+    nav?.classList.toggle("scrolled", window.scrollY > 0);
+  });
+
+  function handleNavLinkClick(
+    event: React.MouseEvent<HTMLElement, MouseEvent>,
+    targetId: string,
+  ) {
+    event.preventDefault();
+    const targetElement = document.getElementById(targetId);
+
+    if (targetElement) {
+      targetElement.scrollIntoView({ behavior: "smooth" });
+    }
+  }
+
   return (
     <nav id="nav">
       <div
         className="nav-logo"
-        onClick={() => (window.location.href = "#hero")}
-        onMouseLeave={() =>
-          window.document
-            .getElementsByClassName("cursor")[0]
-            .classList.remove("hover")
-        }
-        onMouseEnter={() =>
-          window.document
-            .getElementsByClassName("cursor")[0]
-            .classList.add("hover")
-        }
+        onClick={(e) => handleNavLinkClick(e, "hero")}
+        onMouseEnter={() => {
+          document.getElementById("cursor")?.classList.add("hover-logo");
+        }}
+        onMouseLeave={() => {
+          document.getElementById("cursor")?.classList.remove("hover-logo");
+        }}
       >
-        Benjamin<span> C.</span>
+        BENJAMIN<span> C.</span>
       </div>
       <ul className="nav-links">
         <li
-          onMouseLeave={() =>
-            window.document
-              .getElementsByClassName("cursor")[0]
-              .classList.remove("hover")
-          }
-          onMouseEnter={() =>
-            window.document
-              .getElementsByClassName("cursor")[0]
-              .classList.add("hover")
-          }
+          onMouseEnter={() => {
+            document.getElementById("cursor")?.classList.add("hover");
+          }}
+          onMouseLeave={() => {
+            document.getElementById("cursor")?.classList.remove("hover");
+          }}
+          onClick={(e) => handleNavLinkClick(e, "skills")}
         >
-          <a href="#about">{t("nav.about")}</a>
-        </li>
-
-        <li
-          onMouseLeave={() =>
-            window.document
-              .getElementsByClassName("cursor")[0]
-              .classList.remove("hover")
-          }
-          onMouseEnter={() =>
-            window.document
-              .getElementsByClassName("cursor")[0]
-              .classList.add("hover")
-          }
-        >
-          <a href="#skills">{t("nav.skills")}</a>
+          <p>{t("nav.skills")}</p>
         </li>
         <li
-          onMouseEnter={() =>
-            window.document
-              .getElementsByClassName("cursor")[0]
-              .classList.add("hover")
-          }
-          onMouseLeave={() =>
-            window.document
-              .getElementsByClassName("cursor")[0]
-              .classList.remove("hover")
-          }
+          onMouseEnter={() => {
+            document.getElementById("cursor")?.classList.add("hover");
+          }}
+          onMouseLeave={() => {
+            document.getElementById("cursor")?.classList.remove("hover");
+          }}
         >
-          <a href="#projects">{t("nav.projects")}</a>
+          <p>{t("nav.projects")}</p>
         </li>
         <li
-          onMouseEnter={() =>
-            window.document
-              .getElementsByClassName("cursor")[0]
-              .classList.add("hover")
-          }
-          onMouseLeave={() =>
-            window.document
-              .getElementsByClassName("cursor")[0]
-              .classList.remove("hover")
-          }
+          onMouseEnter={() => {
+            document.getElementById("cursor")?.classList.add("hover");
+          }}
+          onMouseLeave={() => {
+            document.getElementById("cursor")?.classList.remove("hover");
+          }}
         >
-          <a href="#contact">{t("nav.contact")}</a>
+          <p>{t("nav.contact")}</p>
         </li>
       </ul>
       <div className="nav-controls">

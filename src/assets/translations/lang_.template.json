@@ -1,6 +1,5 @@
 {
   "nav": {
-    "about": "",
     "skills": "",
     "projects": "",
     "contact": ""
@@ -13,15 +12,6 @@
     "cta1": "",
     "cta2": "",
     "scroll": ""
-  },
-  "about": {
-    "title": "",
-    "p1": "",
-    "p2": "",
-    "stat1": "",
-    "stat2": "",
-    "stat3": "",
-    "stat4": ""
   },
   "skills": {
     "title": ""
