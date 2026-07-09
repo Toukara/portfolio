@@ -1,5 +1,6 @@
 import { useTranslation } from "../../i18n";
 import { LanguageSwitcher, ThemeSwitcher } from "../button/buttons";
+import HandleLink from "../../utils/handleLink";
 
 export default function Navbar() {
   const { t } = useTranslation();
@@ -9,28 +10,16 @@ export default function Navbar() {
     nav?.classList.toggle("scrolled", window.scrollY > 0);
   });
 
-  function handleNavLinkClick(
-    event: React.MouseEvent<HTMLElement, MouseEvent>,
-    targetId: string,
-  ) {
-    event.preventDefault();
-    const targetElement = document.getElementById(targetId);
-
-    if (targetElement) {
-      targetElement.scrollIntoView({ behavior: "smooth" });
-    }
-  }
-
   return (
     <nav id="nav">
       <div
         className="nav-logo"
-        onClick={(e) => handleNavLinkClick(e, "hero")}
+        onClick={(e) => HandleLink(e, "hero")}
         onMouseEnter={() => {
-          document.getElementById("cursor")?.classList.add("hover-logo");
+          document.getElementById("cursor")?.classList.add("hover-large");
         }}
         onMouseLeave={() => {
-          document.getElementById("cursor")?.classList.remove("hover-logo");
+          document.getElementById("cursor")?.classList.remove("hover-large");
         }}
       >
         BENJAMIN<span> C.</span>
@@ -43,7 +32,7 @@ export default function Navbar() {
           onMouseLeave={() => {
             document.getElementById("cursor")?.classList.remove("hover");
           }}
-          onClick={(e) => handleNavLinkClick(e, "skills")}
+          onClick={(e) => HandleLink(e, "skills")}
         >
           <p>{t("nav.skills")}</p>
         </li>

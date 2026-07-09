@@ -22,22 +22,19 @@
     "eyebrow": "My skills",
     "language": {
       "name": "Languages",
-      "JavaScript": "JavaScript",
-      "TypeScript": "TypeScript"
+      "skills": ["Javascript", "Typescript"]
     },
     "framework": {
       "name": "Frameworks",
-      "React": "React",
-      "Vue": "Vue"
+      "skills": ["React", "Vue", "Express"]
     },
     "database": {
       "name": "Databases",
-      "MongoDB": "MongoDB",
-      "MySQL": "MySQL"
+      "skills": ["MongoDB", "SQL"]
     },
     "other": {
       "name": "Other",
-      "scrapping": "Scraping"
+      "skills": ["Scrapping"]
     }
   },
   "projects": {

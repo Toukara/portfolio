@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
 import { useTranslation } from "../../i18n";
+import HandleLink from "../../utils/handleLink";
 
 export default function Hero() {
   const { t } = useTranslation();
@@ -84,10 +85,28 @@ export default function Hero() {
       </h1>
       <p className="hero-sub">{t("hero.sub")}</p>
       <div className="hero-ctas">
-        <a href="#projects" className="btn-primary">
+        <a
+          className="btn-primary"
+          onClick={(e) => HandleLink(e, "projects")}
+          onMouseEnter={() => {
+            document.getElementById("cursor")?.classList.add("hover");
+          }}
+          onMouseLeave={() => {
+            document.getElementById("cursor")?.classList.remove("hover");
+          }}
+        >
           {t("hero.cta1")}
         </a>
-        <a href="#contact" className="btn-outline">
+        <a
+          className="btn-outline"
+          onClick={(e) => HandleLink(e, "contact")}
+          onMouseEnter={() => {
+            document.getElementById("cursor")?.classList.add("hover");
+          }}
+          onMouseLeave={() => {
+            document.getElementById("cursor")?.classList.remove("hover");
+          }}
+        >
           {t("hero.cta2")}
         </a>
       </div>

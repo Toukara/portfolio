@@ -1,7 +1,9 @@
+import type { MouseEvent } from "react";
+import { useEffect, useState } from "react";
 import { useTranslation } from "../../i18n";
 import { useTheme } from "../../utils/theme";
 
-export const LanguageSwitcher = () => {
+const LanguageSwitcher = () => {
   const { locale, toggleLocale } = useTranslation();
 
   return (
@@ -33,7 +35,7 @@ export const LanguageSwitcher = () => {
   );
 };
 
-export const ThemeSwitcher = () => {
+const ThemeSwitcher = () => {
   const { theme, toggle } = useTheme();
 
   return (
@@ -54,3 +56,39 @@ export const ThemeSwitcher = () => {
     </div>
   );
 };
+
+import handleLink from "../../utils/handleLink";
+
+const GoTop = () => {
+  const [visible, setVisible] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => setVisible(window.scrollY > 300);
+    window.addEventListener("scroll", onScroll);
+    onScroll();
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
+  return (
+    <div
+      id="goTop"
+      style={{ display: visible ? "flex" : "none" }}
+      onClick={(e: MouseEvent<HTMLElement>) => {
+        handleLink(e, "hero");
+      }}
+    >
+      <svg
+        width="20"
+        height="20"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="2"
+      >
+        <path d="M12 19V5M5 12l7-7 7 7" />
+      </svg>
+    </div>
+  );
+};
+
+export { GoTop, LanguageSwitcher, ThemeSwitcher };
