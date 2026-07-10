@@ -3,7 +3,13 @@ import "./App.css";
 import CustomCursor from "./components/CustomCursor";
 import { GoTop } from "./components/button/buttons";
 
-import { Navbar, Hero, Skills } from "./components/layout/_index";
+import {
+  Navbar,
+  Hero,
+  Skills,
+  Projects,
+  Contact,
+} from "./components/layout/_index";
 
 function App() {
   CustomCursor();
@@ -15,6 +21,8 @@ function App() {
       <Navbar />
       <Hero />
       <Skills />
+      <Projects />
+      <Contact />
     </div>
   );
 }

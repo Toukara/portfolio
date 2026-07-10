@@ -27,7 +27,7 @@ export default function Skills() {
 
   return (
     <section id="skills">
-      <h2 className="skills-eyebrow">._{t("skills.eyebrow")}</h2>
+      <h2 className="section-eyebrow">{t("skills.eyebrow")}</h2>
       <div className="skills-container">
         {catKeys.map((element) => (
           <div className="skills-category" key={element}>

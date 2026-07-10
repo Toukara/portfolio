@@ -14,15 +14,28 @@ export default function Navbar() {
     <nav id="nav">
       <div
         className="nav-logo"
+        id="nav-logo"
         onClick={(e) => HandleLink(e, "hero")}
         onMouseEnter={() => {
           document.getElementById("cursor")?.classList.add("hover-large");
+          document.getElementById("logo")?.classList.add("logo-hovered");
         }}
         onMouseLeave={() => {
           document.getElementById("cursor")?.classList.remove("hover-large");
+          document.getElementById("logo")?.classList.remove("logo-hovered");
+        }}
+        style={{
+          display: "flex",
+          flexDirection: "row",
+          alignItems: "center",
+          gap: "8px",
         }}
       >
-        BENJAMIN<span> C.</span>
+        <span style={{ fontSize: "30px", fontFamily: "Roboto" }}>&lt;</span>
+        <div id="logo">
+          BENJAMIN<span> C.</span>
+        </div>
+        <span style={{ fontSize: "30px", fontFamily: "Roboto" }}>/&gt;</span>
       </div>
       <ul className="nav-links">
         <li
@@ -43,6 +56,7 @@ export default function Navbar() {
           onMouseLeave={() => {
             document.getElementById("cursor")?.classList.remove("hover");
           }}
+          onClick={(e) => HandleLink(e, "projects")}
         >
           <p>{t("nav.projects")}</p>
         </li>
@@ -53,6 +67,7 @@ export default function Navbar() {
           onMouseLeave={() => {
             document.getElementById("cursor")?.classList.remove("hover");
           }}
+          onClick={(e) => HandleLink(e, "contact")}
         >
           <p>{t("nav.contact")}</p>
         </li>

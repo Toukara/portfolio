@@ -94,7 +94,18 @@ img {
 }
 
 #cursor.hover-large {
-  width: 170px;
+  width: 144px;
+  height: 54px;
+  background: color-mix(in srgb, var(--accent) 4%, transparent);
+  border: 1.5px solid color-mix(in srgb, var(--accent) 65%, transparent);
+  border-radius: 999px;
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.08);
+}
+
+#cursor.hover-small {
+  width: 18px;
   height: 48px;
   background: color-mix(in srgb, var(--accent) 4%, transparent);
   border: 1.5px solid color-mix(in srgb, var(--accent) 65%, transparent);
@@ -162,6 +173,15 @@ nav.scrolled {
   font-size: 18px;
   letter-spacing: -0.03em;
 }
+
+.logo-hovered {
+  text-decoration: underline;
+  text-decoration-color: var(--accent);
+  -moz-text-decoration-color: var(--accent);
+  text-decoration-thickness: 1.75px;
+  text-underline-offset: 0.75vh;
+}
+
 .nav-logo span {
   color: var(--accent);
 }
@@ -387,6 +407,10 @@ section {
   }
 }
 
+section {
+  border-top: 1px solid var(--line);
+}
+
 .scroll-line {
   width: 40px;
   height: 1px;
@@ -467,9 +491,7 @@ section {
 }
 
 /* ── SKILLS ── */
-#skills {
-  border-top: 1px solid var(--line);
-}
+
 .skills-header {
   display: flex;
   justify-content: space-between;
@@ -510,25 +532,31 @@ section {
 }
 
 /* ── PROJECTS ── */
+
 #projects {
-  border-top: 1px solid var(--line);
+  padding: 80px 48px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
+
 .projects-header {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: baseline;
   margin-bottom: 64px;
 }
-.projects-header h2 {
-  font-family: "Syne", sans-serif;
-  font-size: clamp(28px, 4vw, 44px);
-  font-weight: 700;
-  letter-spacing: -0.03em;
-}
-.projects-grid {
+
+.projects-container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 24px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 2vw;
+}
+.projects-two-col {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.projects-three-col {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 .project-card {
   background: var(--card);
@@ -764,16 +792,6 @@ footer {
   margin: 0 auto;
 }
 
-.skills-eyebrow {
-  font-family: "Syne", sans-serif;
-  font-size: 18px;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  color: var(--accent);
-  margin-bottom: 24px;
-}
-
 .skills-container {
   display: flex;
   flex-direction: row;
@@ -835,5 +853,14 @@ footer {
 
 .skill-img {
   height: 2.45vh;
+}
 
+.section-eyebrow {
+  font-family: "Syne", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--accent);
+  margin-bottom: 24px;
 }
