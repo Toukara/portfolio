@@ -110,6 +110,7 @@ export default function Hero() {
           {t("hero.cta2")}
         </a>
       </div>
+      {}
       <div className="hero-scroll">
         <div className="scroll-line"></div>
         <span id="hero-scroll">{t("hero.scroll")}</span>

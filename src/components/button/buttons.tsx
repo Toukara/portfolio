@@ -38,7 +38,6 @@ const ThemeSwitcher = () => {
         id="theme-btn"
         onClick={toggle}
         aria-pressed={isDark}
-        title={isDark ? "Switch to light mode" : "Switch to dark mode"}
         onMouseEnter={() => {
           document.getElementById("cursor")?.classList.add("hover");
         }}
