@@ -10,7 +10,8 @@ interface Project {
 export default function Projects() {
   const { t } = useTranslation();
 
-  const projects = t(`projects.list`) as unknown as Project[];
+  const projectsData = t(`projects.list`) as unknown as Project[];
+  const projects = Array.isArray(projectsData) ? projectsData : [];
 
   const gridClass =
     projects.length > 3

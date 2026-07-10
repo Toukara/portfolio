@@ -38,31 +38,33 @@
     },
     "other": {
       "name": "Autres",
-      "skills": ["Scrapping"]
+      "skills": ["WebScraping"]
     }
   },
   "projects": {
     "title": "Ce que j'ai fait",
     "all": "Voir tout",
     "live": "Voir le site",
-    "p1": {
-      "id": 1,
-      "title": "Eu ex irure excepteur esse laborum quis ipsum eu est sit labore in in.",
-      "desc": "In consequat cillum aute ex laborum ex ea voluptate consequat do.",
-      "tags": ["Next.js", "TypeScript", "Prisma", "Featured"]
-    },
-    "p2": {
-      "id": 2,
-      "title": "Adipisicing pariatur incididunt consectetur sit.",
-      "desc": "Aute excepteur incididunt ullamco do amet commodo Lorem deserunt sint mollit elit elit laborum.",
-      "tags": ["TypeScript", "Python", "React"]
-    },
-    "p3": {
-      "id": 3,
-      "title": "Labore dolor dolore quis minim duis anim eiusmod sunt culpa sit exercitation.",
-      "desc": "Sit commodo ullamco reprehenderit in eiusmod fugiat velit officia reprehenderit laboris tempor tempor.",
-      "tags": ["HTML", "Python"]
-    }
+    "list": [
+      {
+        "id": 1,
+        "title": "Eu ex irure excepteur esse laborum quis ipsum eu est sit labore in in.",
+        "desc": "In consequat cillum aute ex laborum ex ea voluptate consequat do.",
+        "tags": ["Next.js", "TypeScript", "Prisma", "Featured"]
+      },
+      {
+        "id": 2,
+        "title": "Adipisicing pariatur incididunt consectetur sit.",
+        "desc": "Aute excepteur incididunt ullamco do amet commodo Lorem deserunt sint mollit elit elit laborum.",
+        "tags": ["TypeScript", "Python", "React"]
+      },
+      {
+        "id": 3,
+        "title": "Labore dolor dolore quis minim duis anim eiusmod sunt culpa sit exercitation.",
+        "desc": "Sit commodo ullamco reprehenderit in eiusmod fugiat velit officia reprehenderit laboris tempor tempor.",
+        "tags": ["HTML", "Python"]
+      }
+    ]
   },
   "contact": {
     "eyebrow": "Travaillons ensemble",

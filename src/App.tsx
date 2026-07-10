@@ -6,6 +6,7 @@ import { GoTop } from "./components/button/buttons";
 import {
   Navbar,
   Hero,
+  About,
   Skills,
   Projects,
   Contact,
@@ -20,6 +21,7 @@ function App() {
       <div id="cursor"></div>
       <Navbar />
       <Hero />
+      <About />
       <Skills />
       <Projects />
       <Contact />

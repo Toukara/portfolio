@@ -79,3 +79,6 @@ export default function Navbar() {
     </nav>
   );
 }
+
+// TODO
+// changer le theme switch pour un slide switch
