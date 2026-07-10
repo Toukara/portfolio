@@ -1,0 +1,81 @@
+{
+  "nav": {
+    "skills": "Skills",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "hero": {
+    "eyebrow": [
+      "Web Integrator",
+      "Backend Developer",
+      "Frontend Developer",
+      "Fullstack Developer"
+    ],
+    "title1": "Hi, I'm",
+    "title2": "Benjamin.",
+    "sub": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "cta1": "See my work",
+    "cta2": "Contact me",
+    "scroll": "Scroll"
+  },
+  "about": {
+    "eyebrow": "About me",
+    "description": "Adipisicing dolor occaecat id laboris deserunt enim ipsum eu irure do ad.",
+    "card": {
+      "name": ["Name", "Benjamin"],
+      "location": ["Location", "France"],
+      "languages": ["Spoken Languages", "French", "English"],
+      "avaible": ["Avaibility", "Avaible to work"]
+    }
+  },
+  "skills": {
+    "eyebrow": "My skills",
+    "language": {
+      "name": "Languages",
+      "skills": ["Javascript", "Typescript"]
+    },
+    "framework": {
+      "name": "Frameworks",
+      "skills": ["React", "Vue", "Express"]
+    },
+    "database": {
+      "name": "Databases",
+      "skills": ["MongoDB", "SQL"]
+    },
+    "other": {
+      "name": "Other",
+      "skills": ["WebScraping"]
+    }
+  },
+  "projects": {
+    "title": "What I've built",
+    "all": "See all",
+    "live": "See live",
+    "list": [
+      {
+        "id": 1,
+        "title": "Eu ex irure excepteur esse laborum quis ipsum eu est sit labore in in.",
+        "desc": "In consequat cillum aute ex laborum ex ea voluptate consequat do.",
+        "tags": ["Next.js", "TypeScript", "Prisma", "Featured"]
+      },
+      {
+        "id": 2,
+        "title": "Adipisicing pariatur incididunt consectetur sit.",
+        "desc": "Aute excepteur incididunt ullamco do amet commodo Lorem deserunt sint mollit elit elit laborum.",
+        "tags": ["TypeScript", "Python", "React"]
+      },
+      {
+        "id": 3,
+        "title": "Labore dolor dolore quis minim duis anim eiusmod sunt culpa sit exercitation.",
+        "desc": "Sit commodo ullamco reprehenderit in eiusmod fugiat velit officia reprehenderit laboris tempor tempor.",
+        "tags": ["HTML", "Python"]
+      }
+    ]
+  },
+  "contact": {
+    "eyebrow": "Let's work together",
+    "title": "Have a project in mind, or want to work together?",
+    "sub": "Do occaecat labore incididunt amet cupidatat dolore voluptate ipsum ad consectetur qui veniam.",
+    "cta": "Contact me"
+  }
+}
