@@ -10,8 +10,8 @@ export default function Contact() {
   }
   return (
     <section id="contact">
-      <p className="contact-eyebrow">{t("contact.eyebrow")}</p>
-      <h2>{t("contact.title")}</h2>
+      <h3 className="contact-eyebrow">{t("contact.eyebrow")}</h3>
+      <h2 className="contact-title">{t("contact.title")}</h2>
       <p>{t("contact.sub")}</p>
       <a
         className="btn-primary"
@@ -20,17 +20,16 @@ export default function Contact() {
           fontSize: "16px",
           padding: "16px 40px",
         }}
-        data-i18n="contact.cta"
         onClick={encryptEmail("camus.benjamin", "hotmail.com")}
       >
-        Dire bonjour 👋
+        {t("contact.cta")}
       </a>
 
       <div className="contact-social">
-        <a href="#" className="social-link">
+        <a href="https://github.com/toukara" className="social-link">
           GitHub
         </a>
-        <a href="#" className="social-link">
+        {/* <a href="#" className="social-link">
           LinkedIn
         </a>
         <a href="#" className="social-link">
@@ -38,7 +37,7 @@ export default function Contact() {
         </a>
         <a href="#" className="social-link">
           Dribbble
-        </a>
+        </a> */}
       </div>
     </section>
   );
