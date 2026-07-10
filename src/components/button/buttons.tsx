@@ -1,5 +1,6 @@
 import type { MouseEvent } from "react";
 import { useEffect, useState } from "react";
+import { ArrowUpIcon, GlobeIcon } from "../../assets/svg/customSVG";
 import { useTranslation } from "../../i18n";
 import { useTheme } from "../../utils/theme";
 
@@ -9,9 +10,8 @@ const LanguageSwitcher = () => {
   return (
     <div className="language-switcher">
       <button
-        className="ctrl-btn"
+        className="ctrl-btn language-switch"
         id="lang-btn"
-        title={locale === "en" ? "Switch to French" : "Passer en anglais"}
         onClick={toggleLocale}
         onMouseEnter={() => {
           document.getElementById("cursor")?.classList.add("hover");
@@ -20,15 +20,7 @@ const LanguageSwitcher = () => {
           document.getElementById("cursor")?.classList.remove("hover");
         }}
       >
-        <svg
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth="2"
-        >
-          <circle cx="12" cy="12" r="10" />
-          <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
-        </svg>
+        <GlobeIcon />
         <span id="lang-label">{locale === "en" ? "FR" : "EN"}</span>
       </button>
     </div>
@@ -37,13 +29,16 @@ const LanguageSwitcher = () => {
 
 const ThemeSwitcher = () => {
   const { theme, toggle } = useTheme();
+  const isDark = theme === "dark";
 
   return (
     <div className="theme-switcher">
       <button
-        className="ctrl-btn"
+        className="ctrl-btn theme-switch"
         id="theme-btn"
         onClick={toggle}
+        aria-pressed={isDark}
+        title={isDark ? "Switch to light mode" : "Switch to dark mode"}
         onMouseEnter={() => {
           document.getElementById("cursor")?.classList.add("hover");
         }}
@@ -51,7 +46,12 @@ const ThemeSwitcher = () => {
           document.getElementById("cursor")?.classList.remove("hover");
         }}
       >
-        <span id="theme-label">{theme === "dark" ? "Light" : "Dark"}</span>
+        <span className="theme-switch-track">
+          <span className={`theme-switch-thumb ${isDark ? "active" : ""}`} />
+        </span>
+        <span id="theme-label" className="theme-switch-label">
+          {isDark ? "Dark" : "Light"}
+        </span>
       </button>
     </div>
   );
@@ -77,16 +77,7 @@ const GoTop = () => {
         handleLink(e, "hero");
       }}
     >
-      <svg
-        width="20"
-        height="20"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth="2"
-      >
-        <path d="M12 19V5M5 12l7-7 7 7" />
-      </svg>
+      <ArrowUpIcon width="20" height="20" />
     </div>
   );
 };

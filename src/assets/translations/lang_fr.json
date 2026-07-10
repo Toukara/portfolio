@@ -20,7 +20,13 @@
   },
   "about": {
     "eyebrow": "A propos de moi",
-    "description": "Adipisicing dolor occaecat id laboris deserunt enim ipsum eu irure do ad."
+    "description": "Adipisicing dolor occaecat id laboris deserunt enim ipsum eu irure do ad.",
+    "card": {
+      "name": ["Nom", "Benjamin"],
+      "location": ["Localisation", "France"],
+      "languages": ["Langues Parlées", "Français", "Anglais"],
+      "avaible": ["Disponibilité", "Disponible pour travailler"]
+    }
   },
   "skills": {
     "eyebrow": "Mes compétences",
@@ -70,6 +76,6 @@
     "eyebrow": "Travaillons ensemble",
     "title": "Vous avez des projets en tête, ou vous voulez travaillez ensemble ?",
     "sub": "Do occaecat labore incididunt amet cupidatat dolore voluptate ipsum ad consectetur qui veniam.",
-    "cta": "Dire bonjour 👋"
+    "cta": "Contactez moi"
   }
 }

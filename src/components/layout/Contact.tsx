@@ -22,22 +22,42 @@ export default function Contact() {
         }}
         onClick={encryptEmail("camus.benjamin", "hotmail.com")}
       >
-        {t("contact.cta")}
+        {t("contact.cta")} !
       </a>
 
       <div className="contact-social">
-        <a href="https://github.com/toukara" className="social-link">
+        <a
+          href="https://github.com/toukara"
+          id="github"
+          className="social-link"
+          target="_blank"
+        >
           GitHub
         </a>
-        {/* <a href="#" className="social-link">
+        <a
+          href="https://codepen.io/toukara"
+          id="codepen"
+          className="social-link"
+          target="_blank"
+        >
+          Codepen
+        </a>
+        <a
+          href="https://x.com/Benjamincms_"
+          id="twitter"
+          className="social-link"
+          target="_blank"
+        >
+          X / Twitter
+        </a>
+        <a
+          href=" https://www.linkedin.com/in/benjamincamus01/"
+          id="linkedin"
+          className="social-link"
+          target="_blank"
+        >
           LinkedIn
         </a>
-        <a href="#" className="social-link">
-          Twitter/X
-        </a>
-        <a href="#" className="social-link">
-          Dribbble
-        </a> */}
       </div>
     </section>
   );
