@@ -795,6 +795,7 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  flex-wrap: wrap;
   gap: 12px;
   /* padding: 14px; */
 }
@@ -817,7 +818,7 @@ footer {
 }
 
 .skill-img {
-  height: 2.45vh;
+  height: 4.75vh;
 }
 
 .section-eyebrow {

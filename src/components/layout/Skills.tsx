@@ -17,7 +17,11 @@ export default function Skills() {
       return (
         <li key={String(idx)}>
           <div className="skill-item">
-            <img className="skill-img" src={image} alt="" />
+            {entry.toLowerCase() === "mongodb" ? (
+              <img className="skill-img mongo" src={image} alt="" />
+            ) : (
+              <img className="skill-img" src={image} alt="" />
+            )}
             <p>{label}</p>
           </div>
         </li>
