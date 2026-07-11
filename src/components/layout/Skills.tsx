@@ -12,7 +12,8 @@ export default function Skills() {
       const subKey = `skills.${k}.${entry}`;
       const translated = t(subKey);
       const label = translated === subKey ? String(entry) : translated;
-      const image = `../../src/assets/svg/${String(entry).toLowerCase()}.svg`;
+      const normalized = String(entry).toLowerCase();
+      const image = `/svg/${normalized}.svg`;
 
       return (
         <li key={String(idx)}>
