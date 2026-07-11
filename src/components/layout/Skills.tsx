@@ -40,23 +40,3 @@ export default function Skills() {
     </section>
   );
 }
-
-{
-  /* {skills.map((skill, index) => (
-          <div className="skills-category" key={index}>
-            <h3>{skill.category}</h3>
-            <ul>
-              {skill.items.map((item, itemIndex) => (
-                <li key={itemIndex}>
-                  <div className="skill-item">
-                    {item.icon && (
-                      <img className="skill-img" src={item.icon} alt="icon" />
-                    )}
-                    <p>{item.label}</p>
-                  </div>
-                </li>
-              ))}
-            </ul>
-          </div>
-        ))} */
-}
