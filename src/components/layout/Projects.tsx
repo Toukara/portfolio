@@ -1,5 +1,5 @@
-import { ExternalLinkIcon, GitHubIcon } from "../../assets/svg/customSVG";
 import { useTranslation } from "../../i18n";
+import { ExternalLinkIcon, GitHubIcon } from "../../utils/customSVG";
 
 interface Project {
   id: number;

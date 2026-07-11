@@ -1,9 +1,5 @@
-import {
-  LanguageIcon,
-  LocationIcon,
-  UserIcon,
-} from "../../assets/svg/customSVG";
 import { useTranslation } from "../../i18n";
+import { LanguageIcon, LocationIcon, UserIcon } from "../../utils/customSVG";
 
 export default function About() {
   const { t } = useTranslation();

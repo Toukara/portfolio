@@ -1,7 +1,7 @@
 import type { MouseEvent } from "react";
 import { useEffect, useState } from "react";
-import { ArrowUpIcon, GlobeIcon } from "../../assets/svg/customSVG";
 import { useTranslation } from "../../i18n";
+import { ArrowUpIcon, GlobeIcon } from "../../utils/customSVG";
 import { useTheme } from "../../utils/theme";
 
 const LanguageSwitcher = () => {
