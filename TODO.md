@@ -1,0 +1,6 @@
+- [x] Inspect current src/index.css (already read)
+- [x] Prune unused/duplicate selectors based on inspected components
+- [x] Optimize CSS (merge duplicates, remove dead/commented parts, reduce redundancy)
+- [x] Ensure kept selectors include: nav, cursor, hero, about, skills, projects, contact, footer, reveal/goTop, responsive
+- [x] Write updated src/index.css
+- [x] Run npm run build (or lint) to verify

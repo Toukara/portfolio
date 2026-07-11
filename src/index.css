@@ -96,17 +96,6 @@ img {
   box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.08);
 }
 
-#cursor.hover-large {
-  width: 144px;
-  height: 54px;
-  background: color-mix(in srgb, var(--accent) 4%, transparent);
-  border: 1.5px solid color-mix(in srgb, var(--accent) 65%, transparent);
-  border-radius: 999px;
-  backdrop-filter: blur(3px);
-  -webkit-backdrop-filter: blur(3px);
-  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.08);
-}
-
 #cursor.hover-small {
   width: 18px;
   height: 48px;
@@ -147,9 +136,6 @@ a {
   cursor: none;
 }
 
-button {
-  cursor: none;
-}
 /* ── NAV ── */
 nav {
   position: fixed;
@@ -872,6 +858,7 @@ footer {
 #goTop {
   display: flex;
   align-items: center;
+  justify-content: center;
   position: fixed;
   bottom: 20px;
   right: 20px;
@@ -880,9 +867,6 @@ footer {
   background: var(--accent);
   color: #fff;
   border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   opacity: 0.7;
   transition:
     opacity var(--transition),

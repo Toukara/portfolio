@@ -17,11 +17,11 @@ export default function Navbar() {
         id="nav-logo"
         onClick={(e) => HandleLink(e, "hero")}
         onMouseEnter={() => {
-          document.getElementById("cursor")?.classList.add("hover-large");
+          document.getElementById("cursor")?.classList.add("hover");
           document.getElementById("logo")?.classList.add("logo-hovered");
         }}
         onMouseLeave={() => {
-          document.getElementById("cursor")?.classList.remove("hover-large");
+          document.getElementById("cursor")?.classList.remove("hover");
           document.getElementById("logo")?.classList.remove("logo-hovered");
         }}
         style={{
